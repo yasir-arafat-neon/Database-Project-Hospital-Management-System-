@@ -1,0 +1,17 @@
+CREATE TABLE Patient_Nurse (
+    P_ID INT,
+    N_ID INT,
+    CONSTRAINT fk_pn_patient FOREIGN KEY (P_ID) REFERENCES Patient(P_ID),
+    CONSTRAINT fk_pn_nurse FOREIGN KEY (N_ID) REFERENCES Nurse(N_ID)
+);
+
+
+INSERT INTO Patient_Nurse VALUES (101, 1);
+INSERT INTO Patient_Nurse VALUES (103, 3);
+INSERT INTO Patient_Nurse VALUES (104, 4);
+INSERT INTO Patient_Nurse VALUES (105, 5);
+INSERT INTO Patient_Nurse VALUES (106, 2);
+
+
+SELECT * FROM Patient_Nurse;
+DESC Patient_Nurse;

@@ -1,0 +1,14 @@
+CREATE TABLE Address (
+    City VARCHAR(30) PRIMARY KEY,
+    State VARCHAR(30),
+    Country VARCHAR(30)
+);
+
+INSERT INTO Address (City, State, Country) VALUES ('Dhaka', 'Dhaka Division', 'Bangladesh');
+INSERT INTO Address (City, State, Country) VALUES ('Chittagong', 'Chattogram Division', 'Bangladesh');
+INSERT INTO Address (City, State, Country) VALUES ('Sylhet', 'Sylhet Division', 'Bangladesh');
+INSERT INTO Address (City, State, Country) VALUES ('Khulna', 'Khulna Division', 'Bangladesh');
+INSERT INTO Address (City, State, Country) VALUES ('Rajshahi', 'Rajshahi Division', 'Bangladesh');
+
+SELECT * FROM Address;
+DESC Address;

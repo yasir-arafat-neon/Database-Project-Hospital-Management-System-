@@ -1,0 +1,16 @@
+CREATE TABLE Patient_Bill (
+    P_ID INT,
+    B_ID INT,
+    CONSTRAINT fk_pb_patient FOREIGN KEY (P_ID) REFERENCES Patient(P_ID),
+    CONSTRAINT fk_pb_bill FOREIGN KEY (B_ID) REFERENCES Bill(B_ID)
+);
+
+INSERT INTO Patient_Bill VALUES (101, 1);
+INSERT INTO Patient_Bill VALUES (103, 3);
+INSERT INTO Patient_Bill VALUES (104, 4);
+INSERT INTO Patient_Bill VALUES (105, 5);
+INSERT INTO Patient_Bill VALUES (106, 6);
+
+SELECT * FROM Patient_Bill;
+DESC Patient_Bill;
+

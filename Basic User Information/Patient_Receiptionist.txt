@@ -1,0 +1,15 @@
+CREATE TABLE Patient_Receptionist (
+    P_ID INT,
+    R_ID INT,
+    CONSTRAINT fk_pr_patient FOREIGN KEY (P_ID) REFERENCES Patient(P_ID),
+    CONSTRAINT fk_pr_receptionist FOREIGN KEY (R_ID) REFERENCES Receptionist(R_ID)
+);
+
+
+INSERT INTO Patient_Receptionist VALUES (106, 2);
+INSERT INTO Patient_Receptionist VALUES (103, 3);
+INSERT INTO Patient_Receptionist VALUES (104, 4);
+INSERT INTO Patient_Receptionist VALUES (105, 5);
+
+SELECT * FROM Patient_Receptionist;
+DESC Patient_Receptionist;

@@ -1,0 +1,19 @@
+CREATE TABLE Nurse (
+    N_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    City VARCHAR(30),
+    Salary NUMBER(10, 2),
+    D_ID INT,
+    FOREIGN KEY (D_ID) REFERENCES Doctor(D_ID)
+);
+
+INSERT INTO Nurse VALUES (1, 'Rokeya Sultana', 'Dhaka', 45000.00, 1);
+INSERT INTO Nurse VALUES (2, 'Kamrul Hasan', 'Chittagong', 42000.50, 2);
+INSERT INTO Nurse VALUES (3, 'Nadia Khan', 'Sylhet', 48000.75, 3);
+INSERT INTO Nurse VALUES (4, 'Sajid Hossain', 'Rajshahi', 43000.00, 1);
+INSERT INTO Nurse VALUES (5, 'Sumaiya Akter', 'Khulna', 47000.25, 2);
+
+
+SELECT * FROM Nurse;
+
+DESC Nurse;

@@ -1,0 +1,19 @@
+CREATE TABLE Patient (
+    P_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    DOB DATE,
+    Age INT,
+    Gender VARCHAR(10),
+    Contact_Number VARCHAR(15),
+    D_ID INT,
+    FOREIGN KEY (D_ID) REFERENCES Doctor(D_ID)
+);
+
+
+INSERT INTO Patient VALUES (101, 'Ayesha khatun', TO DATE (1998-05-20,'YYYY-MM-DD'), 33, Female, '01712345678',1);
+INSERT INTO Patient VALUES (183, 'Rafiq Ahmed', TO DATE 2000-03-15,'YYYY-MM-DD'),23, Male', 01812345678', 3);
+INSERT INTO Patient VALUES (104, 'Mehedi Hasan', TO DATE (1995-08-05,'YYYY-MM-DD'),28,Male", 01912345678',1)
+INSERT INTO Patient VALUES (105, 'Shabnam Akter', TO DATE (1992-07-12,'YYYY-MM-DD'), 31, Famala', '81512345678", 2);
+INSERT INTO Patient VALUES  (106, 'Farhan Choudhury', TO DATE (1988-12-22','YYYY-MM-DD'),35,'Male', 01612345678", 1);
+SELECT * FROM Patient;
+DESC Patient
