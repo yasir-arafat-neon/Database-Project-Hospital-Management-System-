@@ -1,0 +1,3 @@
+SELECT * FROM Patient WHERE Name LIKE 'A%';
+
+SELECT * FROM Nurse WHERE Name LIKE '%a%';

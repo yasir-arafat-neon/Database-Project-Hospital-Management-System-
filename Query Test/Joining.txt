@@ -1,0 +1,8 @@
+SELECT P.Name AS Patient_Name, D.Name AS Doctor_Name FROM Patient P, Doctor D WHERE
+P.D_ID = D.D_ID;
+
+SELECT P.Name AS Patient_Name, B.Amount FROM Patient P, Bill B WHERE P.P_ID = B.P_ID
+AND B.Amount BETWEEN 1000 AND 3000;
+
+SELECT D.Name AS Doctor_Name, N.Name AS Nurse_Name FROM Doctor D, Nurse N WHERE
+D.D_ID = N.D_ID(+);

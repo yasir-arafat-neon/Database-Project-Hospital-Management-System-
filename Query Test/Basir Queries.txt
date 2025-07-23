@@ -1,0 +1,7 @@
+SELECT Name, City, Salary FROM Doctor;
+
+SELECT Name, Age FROM Patient WHERE Age > 30;
+
+SELECT * FROM Bill WHERE Amount > 2000;
+
+SELECT Name, Salary FROM Nurse WHERE City = 'Dhaka';

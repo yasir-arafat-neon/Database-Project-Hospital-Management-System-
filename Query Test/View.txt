@@ -1,0 +1,10 @@
+CREATE VIEW dept_sum_vu 2 (name, minsal, maxsal, avgsal) 3 AS SELECT d.dname, MIN(e.sal),
+MAX(e.sal), 4 AVG(e.sal) 5 FROM emp e, dept d 6 WHERE e.deptno = d.deptno 7 GROUP BY
+d.dname;
+
+CREATE VIEW PatientDetails AS SELECT P.Name AS Patient_Name, P.Age, P.Gender, D.Name AS
+Doctor_Name, N.Name AS Nurse_Name FROM Patient P JOIN Doctor D ON P.D_ID = D.D_ID JOIN
+Patient_Nurse PN ON P.P_ID = PN.P_ID JOIN Nurse N ON PN.N_ID = N.N_ID;
+
+CREATE VIEW salvu30 AS SELECT empno EMPLOYEE_NUMBER, ename NAME, sal SALARY FROM emp
+WHERE deptno = 30;

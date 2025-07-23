@@ -1,0 +1,5 @@
+SELECT Name, DECODE(SIGN(Salary - 100000), 1, 'Above 100K', -1, 'Below 100K', 'Exactly 100K')
+AS Salary_Status FROM Doctor;
+
+SELECT Amount, DECODE(SIGN(Amount - 3000), 1, 'High', 0, 'Medium', -1, 'Low') AS Bill_Category
+FROM Bill; 

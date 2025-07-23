@@ -1,0 +1,3 @@
+SELECT UPPER(Name) AS Upper_Name FROM Receptionist;
+
+SELECT SUBSTR(Name, 1, 3) AS Short_Name FROM Doctor;
